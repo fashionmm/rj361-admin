@@ -4,12 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build":"webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository":{
+    "type":"git",
+    "url":"git+https://github.com/fashionmm/rj361-admin.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "webpack": "^2.1.0-beta.25"
+    "webpack": "^1.13.2"
   }
 }
