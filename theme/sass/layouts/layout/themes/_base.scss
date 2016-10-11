@@ -878,14 +878,14 @@
     ******/
 
     .page-footer {
-        .page-footer-inner {
-            color: $footer-default-font-color;
-        }
-        
-        .page-footer-fixed & {
-            background-color: $footer-fixed-bg-color; 
-        }
-    }
+          .page-footer-inner {
+              color: $footer-default-font-color;
+          }
+
+          .page-footer-fixed & {
+              background-color: $footer-fixed-bg-color;
+          }
+      }
 
     @media (min-width: $screen-md-min) { /* 992px */
 

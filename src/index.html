@@ -5,14 +5,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href=""/>
-</head>
-<body>
-<!--页头-->
-<div class="page-header">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="./assets/global/plugins/font-awesome/css/font-awesome.css"/>
+    <link rel="stylesheet" href="less/layouts/layout/_header.css">
+    <link rel="stylesheet" href="less/layouts/themes/_base.css"/>
+    <link rel="stylesheet" href="less/layouts/themes/blue.css"/>
 
+</head>
+<body class="">
+<!--页头导航-->
+<div class="page-header navbar navbar-fixed-top ">
+    <!--logo-->
+    <div class="page-logo">
+        <a href="login.html">
+            <img class="logo-default" src="assets/layouts/layout/img/logo.png" alt=""/>
+        </a>
+        <div class="menu-toggler sidebar-toggler"></div>
+    </div>
+    <!--/logo-->
+    <!--自响应菜单切换-->
+    <a href="javascript:void(0);" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse"></a>
+    <!--/自响应菜单切换-->
+    <!--顶端导航菜单-->
+    <div class="top-menu">
+        <ul class="nav navbar-nav">
+            <li class="dropdown dropdown-extended ">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"
+                   data-close-others="true">
+                    <i class="fa fa-bell"></i>
+                    <span class="badge">7</span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="">销售订单</a></li>
+                    <li><a href="">入库订单</a></li>
+                    <li><a href="">生日</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-envelope"></i><span></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="">销售订单</a></li>
+                    <li><a href="">入库订单</a></li>
+                    <li><a href="">生日</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-tasks"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="">销售订单</a></li>
+                    <li><a href="">入库订单</a></li>
+                    <li><a href="">生日</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><img src="" alt=""/><span></span><i class="fa fa-angle-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="">销售订单</a></li>
+                    <li><a href="">入库订单</a></li>
+                    <li><a href="">生日</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!--/顶端导航菜单-->
 </div>
-<!--/页头-->
+<!--/页头导航-->
 
 <!--页面容器-->
 <div class="page-container">
@@ -24,4 +81,6 @@
 <div class="page-footer"></div>
 <!--/页脚-->
 </body>
+<script type="text/javascript" src="assets/global/plugins/jquery.min.js"></script>
+<script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </html>

@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+//页头
+@header-height:46px;
+@header-height-xs:(@header-height * 2);
+
+@header-logo-height:14px;
+@header-menu-toggler-width:24px;
+@header-menu-toggler-height:24px;
+@header-sidebar-toggler-margin:(@header-height - @header-menu-toggler-height)/2 0px 0px 0px;
+@header-responsive-toggler-margin:(@header-height - @header-menu-toggler-height)/2 0px 0px 0px;
+@header-logo-margin:(@header-height - @header-logo-height)/2 0px 0px 0px;
+
+@header-top-menu-general-item-padding:17px 10px 9px 10px;//顶部菜单通用元素内边距
+@header-top-menu-general-item-padding-on-mobile:17px 6px 9px 6px;//移动端，顶部菜单通用元素内边距
+@header-top-menu-user-item-padding:14px 6px 12px 8px;//顶部菜单用户导航元素内边距
+@header-top-menu-user-item-padding-on-mobile:14px 0px 12px 7px;//移动端，顶部菜单用户导航元素内边距
+@header-top-menu-language-item-padding:14px 3px 12px 7px;//顶部菜单语言导航元素内边距
+@header-top-menu-language-item-padding-on-moblie:14px 4px 12px 2px;//移动端，顶部菜单语言导航元素内边距
+@header-top-menu-general-item-badge-top:10px;//顶部菜单通用元素徽章顶端位置
+@header-top-menu-icon-font-size:17px;
+
+@header-top-menu-user-font-size:13px;
+@header-top-menu-user-font-weight:300;
+@header-top-menu-user-dropdown-link-font-size:14px;
+@header-top-menu-user-dropdown-link-font-weight:300;
+
+@header-hor-menu-general-item-padding:13px 13px;//水平菜单元素内边距
+@header-hor-menu-submenu-item-padding:9px 10px;//水平子菜单元素内边距
+@header-hor-menu-submenu-item-arrow-top:9px;//水平子菜单元素向上箭头
+@header-top-menu-search-toggler-button-padding:15px 22px 15px 22px;//水平菜单查询切换按钮内边距
+@header-top-menu-search-button-padding:7px 20px;//水平菜单查询按钮内边距
+@header-top-menu-search-input-margin:7px 0px 0px 0px;//水平菜单查询文本框外边距
+
+// 水平菜单字体
+@header-hor-menu-default-link-font-size:14px;
+@header-hor-menu-default-link-font-weight:400;
+@header-hor-menu-dropdown-menu-link-font-weight:14px;
+@header-hor-menu-dropdown-menu-link-font-weight:300;
+@header-hor-menu-mege-menu-header-font-size:15px;
+@header-hor-menu-mege-menu-header-font-weight:400;
+
+//侧导航条
+@sidebar-width:235px; //侧导航正常宽度，展开时宽度。
+@sidebar-collapsed-width:45px;//侧导航最小宽度或者侧导航收缩后宽度。
+@sidebar-collapsed-submenu-width-on-hover:210px;//侧导航收缩后，悬浮情况下，子菜单宽度
+@sidebar-logo-container-width:@sidebar-width;//侧导航正常情况下，logo容器宽度
+@sidebar-logo-container-width-xs:110px;//侧导航移动portrait视图下，logo容器宽度
+@sidebar-logo-container-width-xxs:100px;//侧导航移动landspace视图下，logo容器宽度
+
+@sidebar-menu-head-font-size:14px;
+@sidebar-menu-link-font-size:14px;
+@sidebar-menu-link-font-weight:300;
+@sidebar-menu-link-icon-font-size:16px;
+@sidebar-menu-sub-menu-link-font-size:14px;
+
+//页面内容
+@page-content-min-height:600px;//页面内容最小高度
+
+//页脚
+@page-footer-height:33px;//页脚高度
+
+//z-index
+@zindex-header-fixed:9995;
+@zindex-header-static:9995;
+@zindex-quick-sidebar:10500;
+@zindex-quick-sidebar-full-height:9996;
+@zindex-sidebar-fixed:10000;
+@zindex-footer-fixed:10000;
+@zindex-sidebar-submenu:2000;
+@zindex-go-to-top:10001;

@@ -1,0 +1,53 @@
+/**
+不透明度程度
+**/
+.opacity(@val, @important:~"") {
+  @newval:@val * 100; //计算过滤器 不透明度. 采用变量过渡，目的是less 在解析alpha时，对于计算表达式，解析失败。
+  opacity: @val @important;
+  filter: alpha(opacity=@newval) @important;
+}
+
+/*
+边框线圆角
+@radius 圆角像素
+@important 优先级 （!important），默认值为空字符
+*/
+.border-radius(@radius,@important:~"") {
+  -webkit-border-radius: @radius @important;
+  -moz-border-radius: @radius @important;
+  -ms-border-radius: @radius @important;
+  -o-border-radius: @radius @important;
+  border-radius: @radius @important;
+}
+
+// 占位符文本
+.placeholder(@color: @input-color-placeholder){
+ &::-moz-placeholder {color: @color; opacity: 1} //
+  &:-ms-input-placeholder {color: @color;} // ie 10+
+  &::-webkit-input-placeholder { color: @color;} //safari and chrome
+}
+
+
+.theme(@theme-name) when (@theme-name = "light") or (@theme-name = "light2") {
+  color: darken(@sidebar-menu-link-icon-font-color, 15%);
+}
+
+.theme(@theme-name) when (default()) {
+  color: darken(@sidebar-menu-link-icon-font-color, 5%);
+}
+
+.theme1(@theme-name) when (@theme-name = "light") or (@theme-name = "light2") {
+  color: darken(@sidebar-menu-link-icon-font-color, 15%);
+}
+
+.theme1(@theme-name) when (default()) {
+  color: darken(@sidebar-menu-link-icon-font-color, 20%);
+}
+
+
+/**
+设置阴影
+**/
+.box-shadow(@shadow) {
+
+}
